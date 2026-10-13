@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAVENDER & CO. | Little Things. Beautiful Living. — Luxury Lifestyle & Living</title>
+  <meta name="description" content="Discover LAVENDER & CO. Thoughtfully chosen lifestyle essentials, botanical self-care, artisanal ceramics, and heirloom accessories for your sanctuary.">
+  <meta name="keywords" content="lavender luxury, lifestyle brand, artisan decor, natural self care, silk foulard, soy candles">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Inline subtle spinners & keyframe tweaks */
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    .spin { animation: spin 1s linear infinite; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <span>Enjoy complimentary express courier across India on orders over ₹1,999</span>
+    <span>•</span>
+    <span>Use code <span class="highlight">LAVENDER10</span> for 10% off your first sanctuary order</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="LAVENDER & CO. Home">
+        <span class="brand-title">LAVENDER & CO.</span>
+        <span class="brand-tagline">Little Things. Beautiful Living.</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Icons -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="action-btn" id="search-btn" title="Search products" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Trigger -->
+        <button class="action-btn" id="wishlist-btn" title="Saved Wishlist" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-counter wishlist-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Trigger -->
+        <button class="action-btn" id="cart-btn" title="Shopping Bag" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-counter cart-count" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>The Autumn Provence Collection</span>
+          </div>
+          <h1 class="hero-title">Make Room for <em>Beautiful Things.</em></h1>
+          <p class="hero-lead">
+            Thoughtfully chosen essentials to make your everyday life a little more beautiful. Designed for warm rituals, slow mornings, and timeless elegance.
+          </p>
+          <div class="hero-buttons">
+            <a href="#shop" class="btn btn-primary">
+              <span>Shop Collection</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">Discover Our Story</a>
+          </div>
+          <div class="hero-perks">
+            <div class="hero-perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>100% Ethical & Artisanal</span>
+            </div>
+            <div class="hero-perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <span>Express Pan-India Delivery</span>
+            </div>
+            <div class="hero-perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+              <span>Signature Keepsake Box</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80" alt="Lavender & Co. Lifestyle Editorial" loading="eager" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1000&q=80';" />
+          </div>
+          <div class="hero-floating-badge">
+            <div class="floating-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="floating-text">
+              <div class="badge-title">Handcrafted Luxury</div>
+              <div class="badge-sub">Small-Batch Provence Harvest</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOPPING CATEGORIES SECTION -->
+    <section class="categories-section" id="collections">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Curated Collections</span>
+          <h2 class="section-title">Shop by Sanctuary Moments</h2>
+          <p class="section-subtitle">Delight in timeless pieces designed to elevate everyday rituals into poetic occasions.</p>
+        </div>
+
+        <div class="categories-grid" id="categories-grid">
+          <!-- Dynamically populated from CATEGORIES_DATA -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS & FULL CATALOG -->
+    <section class="products-section" id="shop">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Thoughtfully Selected</span>
+          <h2 class="section-title">Featured Pieces</h2>
+          <p class="section-subtitle">Heirloom textiles, calming botanicals, stoneware ceramics, and gilded keepsakes.</p>
+        </div>
+
+        <!-- Filter & Search Controls Bar -->
+        <div class="filter-bar">
+          <div class="category-pills" id="category-pills">
+            <button class="pill-btn active" data-category="all">All Products</button>
+            <button class="pill-btn" data-category="fashion">Fashion & Accessories</button>
+            <button class="pill-btn" data-category="home">Home Decor</button>
+            <button class="pill-btn" data-category="beauty">Beauty & Self-Care</button>
+            <button class="pill-btn" data-category="stationery">Stationery & Gifts</button>
+          </div>
+
+          <div class="filter-controls">
+            <!-- Section Search Input -->
+            <div class="section-search-wrap">
+              <svg class="section-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="section-search" placeholder="Search catalog..." aria-label="Search catalog">
+            </div>
+
+            <!-- Price Range Filter -->
+            <select class="filter-select" id="price-filter" aria-label="Filter by Price">
+              <option value="all">Price: All Ranges</option>
+              <option value="under-1500">Under ₹1,500</option>
+              <option value="1500-3000">₹1,500 – ₹3,000</option>
+              <option value="above-3000">Above ₹3,000</option>
+            </select>
+
+            <!-- Sorting Dropdown -->
+            <select class="filter-select" id="sort-by" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+              <option value="newest">New Arrivals</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Results Counter -->
+        <div class="results-status-bar">
+          <span id="product-count-display">Showing 16 refined pieces</span>
+          <span style="font-size: 0.8rem; color: var(--color-brown-mocha);">All prices inclusive of taxes</span>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="product-grid" id="product-grid">
+          <!-- Dynamically populated by renderProducts() in app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONAL EDITORIAL BANNER -->
+    <section class="promo-banner-section">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-grid">
+            <div class="promo-content">
+              <span class="promo-badge">The Season Edit</span>
+              <h2 class="promo-title">The Lavender Sanctuary Box</h2>
+              <p class="promo-text">
+                An artisan-assembled gift chest featuring our signature wild lavender soy candle, 22-momme pure silk pillowcase, and midnight botanical recovery oil. Packaged in embossed linen with velvet ribbon.
+              </p>
+              <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
+                <button class="btn btn-secondary" onclick="openProductModal(16)">
+                  <span>Explore Gift Set • ₹1,750</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <span style="font-size: 0.85rem; color: var(--color-lavender-soft);">Limited 100 sets available</span>
+              </div>
+            </div>
+            <div class="promo-visual">
+              <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=1000&q=80" alt="Lavender Gift Chest" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80';" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT OUR BRAND SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-image-main">
+              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Lavender Farm and Artisans" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80';" />
+            </div>
+            <div class="about-float-card">
+              <h4>Consciously Crafted</h4>
+              <p>Every formula and fiber is created in harmony with the rhythms of nature.</p>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-tag">Our Philosophy</span>
+            <h2>Mindful Rituals. Warm Living.</h2>
+            <p>
+              At LAVENDER & CO., we believe that our surroundings shape our inner peace. Founded with a reverent passion for slow living and artisanal craftsmanship, every piece in our collection is curated to bring warmth, tactility, and understated elegance into your home.
+            </p>
+            <p>
+              From certified organic French lavender distillations to masterfully thrown ceramic urns and hand-rolled mulberry silk foulards, our pieces honor tradition while celebrating modern feminine sensibilities.
+            </p>
+
+            <div class="brand-pillars">
+              <div class="pillar-item">
+                <h5>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                  Natural Origins
+                </h5>
+                <p>Pure botanical extracts and zero synthetic fillers in our personal care line.</p>
+              </div>
+
+              <div class="pillar-item">
+                <h5>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                  Ethical Artisans
+                </h5>
+                <p>Fair trade partnerships with multi-generational ceramic and textile ateliers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="sample-disclaimer">Sample customer reflections for demonstration</span>
+          <span class="section-tag" style="display: block; width: fit-content; margin: 0 auto 12px;">Loved By Our Community</span>
+          <h2 class="section-title">Words from the Sanctuary</h2>
+          <p class="section-subtitle">Read how our patrons have embraced slower mornings and tranquil evenings.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "LAVENDER & CO. has completely transformed my daily routine. The French Silk Foulard arrived wrapped in tissue paper with real dried lavender sprigs. The attention to detail is unmatched."
+            </p>
+            <div class="testimonial-author-wrap">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Ananya Deshmukh" />
+              <div class="author-info">
+                <h5>Ananya Deshmukh</h5>
+                <span>Mumbai, India • Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The soy candle burns so evenly and fills my living room with the most soothing, sophisticated scent. Not cloying at all — just refined calm in a gorgeous ceramic jar."
+            </p>
+            <div class="testimonial-author-wrap">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Rohan Varma" />
+              <div class="author-info">
+                <h5>Rohan Varma</h5>
+                <span>Bengaluru, India • Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "I bought the sleep oil and the silk pillowcase. It genuinely feels like bringing a high-end luxury spa retreat into my own home. My sleep has noticeably improved."
+            </p>
+            <div class="testimonial-author-wrap">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Meera Krishnan" />
+              <div class="author-info">
+                <h5>Meera Krishnan</h5>
+                <span>Chennai, India • Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS SECTION -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Help & Clarity</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about our sourcing, dispatching, and care.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item active">
+            <button class="faq-question-btn">
+              <span>Where are your botanical and artisanal products sourced?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>Our botanical ingredients, including wild lavender, are ethically harvested from small-batch farms in Provence and the Nilgiri hills. Our ceramics and textiles are handcrafted by master artisans in India and Portugal using sustainably sourced raw materials.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What are your shipping timelines across India?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>Orders are dispatched within 24 hours. We offer complimentary express delivery on all orders above ₹1,999. Standard delivery typically takes 2–4 business days across metro cities and 3–6 business days for all other PIN codes across India.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Are your beauty & self-care formulas clean and cruelty-free?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. 100% of our personal care formulations are cruelty-free, paraben-free, vegan, and free from synthetic dyes or artificial fragrances. We test only on willing human friends, never on animals.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Can I send an item as a gift with a personalized message?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Every order can be packaged in our signature lavender and mocha embossed gift box with a handwritten calligraphy note. Simply leave your gift message in the order notes or email us right after placing your order.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What is your return and exchange policy?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>We offer a hassle-free 15-day return window for unused lifestyle, decor, and fashion items in original condition. For hygiene reasons, opened beauty formulas cannot be returned unless damaged upon arrival.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SUBSCRIPTION SECTION -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <span class="section-tag" style="background: rgba(255,255,255,0.7); margin-bottom: 12px;">Join Our Inner Circle</span>
+          <h3>Step Into the Lavender Journal</h3>
+          <p>
+            Subscribe to receive private preview access to seasonal releases, slow living reflections, and enjoy 10% off your initial purchase.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address..." required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-title">LAVENDER & CO.</span>
+          <span class="brand-tagline">Little Things. Beautiful Living.</span>
+          <p class="footer-about">
+            Curators of modern luxury and serene lifestyle rituals. Conscientiously harvested in Provence and crafted by master artisans across India.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="4" x2="12" y2="20"></line>
+                <circle cx="12" cy="12" r="8"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h5>Collections</h5>
+          <ul class="footer-links">
+            <li><a href="#shop" onclick="state.category='fashion'; renderProducts();">Fashion & Accessories</a></li>
+            <li><a href="#shop" onclick="state.category='home'; renderProducts();">Home Decor & Vessels</a></li>
+            <li><a href="#shop" onclick="state.category='beauty'; renderProducts();">Botanical Self-Care</a></li>
+            <li><a href="#shop" onclick="state.category='stationery'; renderProducts();">Stationery & Keepsakes</a></li>
+            <li><a href="#shop">New Arrivals 2026</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Sanctuary Care</h5>
+          <ul class="footer-links">
+            <li><a href="#about">Our Story & Heritage</a></li>
+            <li><a href="#faq">Shipping & Express Delivery</a></li>
+            <li><a href="#faq">Returns & Exchanges</a></li>
+            <li><a href="#faq">Gifting & Custom Notes</a></li>
+            <li><a href="#faq">Sustainability Commitment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Atelier & Contact</h5>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>concierge@lavenderandco.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 98200 12845 (10am–7pm IST)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Indiranagar Atelier, Bengaluru, Karnataka, 560038</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 LAVENDER & CO. All Rights Reserved. Little Things. Beautiful Living.</div>
+        <div class="payment-badges">
+          <span>Compliant Secure Checkout</span>
+          <span>•</span>
+          <span>UPI / Cards / Net Banking / COD Demo</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       DRAWERS & MODAL OVERLAYS
+       ========================================== -->
+
+  <!-- Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Shopping Cart Slide Drawer -->
+  <aside class="slide-drawer" id="cart-drawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span>Your Shopping Bag</span>
+      </div>
+      <button class="close-btn" id="close-cart-btn" aria-label="Close cart drawer">✕</button>
+    </div>
+
+    <!-- Free Delivery Progress Meter -->
+    <div class="shipping-bar-container">
+      <div class="shipping-bar-text" id="shipping-progress-text">
+        Complimentary shipping on orders over ₹1,999
+      </div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shipping-progress-bar" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="drawer-body" id="cart-items-container">
+      <!-- Populated via renderCart() in app.js -->
+    </div>
+
+    <!-- Cart Footer with Totals & Checkout -->
+    <div class="drawer-footer" id="cart-footer" style="display: none;">
+      <!-- Promo code field -->
+      <div class="promo-code-box">
+        <input type="text" class="promo-code-input" id="cart-promo-input" placeholder="Promo code (e.g. LAVENDER10)" aria-label="Promo code">
+        <button class="btn btn-outline-brown btn-sm" id="apply-promo-btn">Apply</button>
+      </div>
+
+      <div class="drawer-totals-row">
+        <span>Subtotal</span>
+        <span id="drawer-subtotal">₹0</span>
+      </div>
+
+      <div class="drawer-totals-row">
+        <span>Estimated Express Shipping</span>
+        <span id="drawer-shipping">Complimentary</span>
+      </div>
+
+      <div class="drawer-totals-row" id="drawer-discount-row" style="display: none; color: var(--color-success);">
+        <span>Promotional Discount</span>
+        <span id="drawer-discount">-₹0</span>
+      </div>
+
+      <div class="drawer-totals-row grand-total">
+        <span>Total Payable (INR)</span>
+        <span id="drawer-grand-total">₹0</span>
+      </div>
+
+      <button class="btn btn-primary" style="width: 100%; margin-bottom: 8px;" onclick="openCheckout()">
+        Proceed to Checkout
+      </button>
+      <button class="btn btn-secondary" style="width: 100%; font-size: 0.88rem;" onclick="closeAllDrawers()">
+        Continue Shopping
+      </button>
+    </div>
+  </aside>
+
+  <!-- Wishlist Slide Drawer -->
+  <aside class="slide-drawer" id="wishlist-drawer" aria-label="Wishlist">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span>Your Wishlist</span>
+      </div>
+      <button class="close-btn" id="close-wishlist-btn" aria-label="Close wishlist drawer">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlist-items-container">
+      <!-- Populated via renderWishlist() in app.js -->
+    </div>
+  </aside>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" id="mobile-nav" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <span class="brand-title" style="font-size: 1.35rem;">LAVENDER & CO.</span>
+        <span class="brand-tagline">Little Things. Beautiful Living.</span>
+      </div>
+      <button class="close-btn" id="close-mobile-nav-btn" aria-label="Close menu">✕</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#shop" class="mobile-nav-link">Shop All</a></li>
+      <li><a href="#collections" class="mobile-nav-link">Collections</a></li>
+      <li><a href="#about" class="mobile-nav-link">About Our Story</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact Atelier</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <p style="margin-bottom: 10px;">Free delivery across India over ₹1,999</p>
+      <div style="font-size: 0.8rem; color: var(--color-brown-mocha);">concierge@lavenderandco.com</div>
+    </div>
+  </aside>
+
+  <!-- Live Search Overlay Modal -->
+  <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Catalog">
+    <div class="search-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-brown-chocolate);">Search Catalog</h4>
+        <button class="close-btn" id="close-search-btn" aria-label="Close search">✕</button>
+      </div>
+
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-brown-mocha);">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="header-search-input" placeholder="Type a product, scent, or material..." autocomplete="off">
+      </div>
+
+      <div class="search-results-list" id="search-modal-results">
+        <!-- Live search matches or prompt -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="product-modal-overlay" role="dialog" aria-modal="true" aria-label="Product Details">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeProductModal()" aria-label="Close details">✕</button>
+      <div id="product-modal-content">
+        <!-- Injected via openProductModal() in app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal & Demo Flow -->
+  <div class="modal-overlay" id="checkout-modal-overlay" role="dialog" aria-modal="true" aria-label="Checkout">
+    <div class="modal-container checkout-modal-container">
+      <button class="modal-close-btn" onclick="closeCheckout()" aria-label="Close checkout">✕</button>
+
+      <div class="checkout-grid">
+        <!-- Form Side -->
+        <div class="checkout-form-side">
+          <span class="section-tag" style="margin-bottom: 8px;">Sanctuary Checkout</span>
+          <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 10px;">Shipping & Contact</h3>
+
+          <div class="checkout-badge-demo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <span><strong>Demo Flow:</strong> No real payment is required or charged. Real payment APIs are disabled.</span>
+          </div>
+
+          <form id="checkout-form">
+            <div class="form-group">
+              <label for="checkout-name">Full Name *</label>
+              <input type="text" id="checkout-name" class="form-control" placeholder="e.g. Radhika Sharma" required>
+              <span class="form-error-msg"></span>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="checkout-email">Email Address *</label>
+                <input type="email" id="checkout-email" class="form-control" placeholder="radhika@example.com" required>
+                <span class="form-error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="checkout-phone">Phone Number (10 digits) *</label>
+                <input type="tel" id="checkout-phone" class="form-control" placeholder="9820123456" required>
+                <span class="form-error-msg"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-address">Street Shipping Address *</label>
+              <input type="text" id="checkout-address" class="form-control" placeholder="Flat / House No., Apartment, Street name" required>
+              <span class="form-error-msg"></span>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="checkout-city">City *</label>
+                <input type="text" id="checkout-city" class="form-control" placeholder="e.g. Mumbai" required>
+                <span class="form-error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="checkout-pincode">Postal PIN Code (6 digits) *</label>
+                <input type="text" id="checkout-pincode" class="form-control" placeholder="400001" maxlength="6" required>
+                <span class="form-error-msg"></span>
+              </div>
+            </div>
+
+            <label style="font-size: 0.82rem; font-weight: 600; color: var(--color-text-dark); margin-top: 10px; display: block;">Select Demo Payment Method</label>
+            <div class="payment-method-selector">
+              <div class="payment-option-card active" data-method="upi">
+                <div>⚡ UPI Demo</div>
+                <small style="color: var(--color-text-muted); font-size: 0.7rem;">GPay / PhonePe / Paytm</small>
+              </div>
+              <div class="payment-option-card" data-method="card">
+                <div>💳 Card Demo</div>
+                <small style="color: var(--color-text-muted); font-size: 0.7rem;">Visa / Mastercard / Rupay</small>
+              </div>
+              <div class="payment-option-card" data-method="cod">
+                <div>📦 Cash on Delivery</div>
+                <small style="color: var(--color-text-muted); font-size: 0.7rem;">Pay on Delivery</small>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px 20px; font-size: 1rem; margin-top: 10px;">
+              Place Demo Order (₹<span id="checkout-btn-total">0</span>)
+            </button>
+          </form>
+        </div>
+
+        <!-- Summary Side -->
+        <div class="checkout-summary-side">
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-brown-chocolate); margin-bottom: 18px; border-bottom: 1px solid var(--color-border-lavender); padding-bottom: 10px;">
+            Order Summary
+          </h4>
+
+          <div id="checkout-items-list" style="max-height: 250px; overflow-y: auto; margin-bottom: 18px; padding-right: 6px;">
+            <!-- Rendered by renderCheckoutSummary() -->
+          </div>
+
+          <div class="drawer-totals-row">
+            <span>Subtotal</span>
+            <span id="checkout-subtotal">₹0</span>
+          </div>
+          <div class="drawer-totals-row">
+            <span>Express Courier</span>
+            <span id="checkout-shipping">Complimentary</span>
+          </div>
+          <div class="drawer-totals-row" id="checkout-discount-row" style="display: none; color: var(--color-success);">
+            <span>Promotional Discount</span>
+            <span id="checkout-discount">-₹0</span>
+          </div>
+
+          <div class="drawer-totals-row grand-total" style="margin-top: 16px; margin-bottom: 20px;">
+            <span>Final Amount (INR)</span>
+            <span id="checkout-grand-total">₹0</span>
+          </div>
+
+          <div style="font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.5; background: var(--color-cream); padding: 12px; border-radius: 8px; border: 1px solid var(--color-border-lavender);">
+            🌿 <strong>Complimentary Luxury Packaging:</strong> All orders arrive wrapped in recycled botanical tissue with a sprig of dried French lavender.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
