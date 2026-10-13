@@ -5,18 +5,25 @@
 
 const CATEGORIES_DATA = [
   {
+    id: "footwear",
+    name: "Luxury Footwear",
+    description: "Handcrafted suede loafers, artisanal leather babouches, and court sneakers.",
+    image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+    itemCount: 6
+  },
+  {
     id: "fashion",
     name: "Fashion & Accessories",
     description: "Silken scarves, linen silhouettes, and artisanal leather pieces.",
     image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    itemCount: 4
+    itemCount: 5
   },
   {
     id: "home",
     name: "Home Decor",
     description: "Ceramic vessels, handcrafted throws, and warm ambient touches.",
     image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
-    itemCount: 4
+    itemCount: 6
   },
   {
     id: "beauty",
@@ -30,7 +37,7 @@ const CATEGORIES_DATA = [
     name: "Stationery & Gifts",
     description: "Gold-embossed journals, linen stationery, and keepsake gift boxes.",
     image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    itemCount: 4
+    itemCount: 5
   }
 ];
 
@@ -354,6 +361,206 @@ const PRODUCTS_DATA = [
       values: ["Signature Lavender Box", "Mocha Keepsake Box"]
     },
     specs: ["100ml Glass fine mist bottle", "10ml Amethyst rollerball", "Embossed luxury gift packaging", "Personalized note card option"]
+  },
+  {
+    id: 17,
+    name: "Tuscan Suede Penny Loafers",
+    category: "footwear",
+    categoryLabel: "Luxury Footwear",
+    price: 4850,
+    originalPrice: 5900,
+    rating: 4.9,
+    reviewsCount: 94,
+    badge: "Handmade",
+    featured: true,
+    isNew: true,
+    image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+    description: "Hand-burnished Italian split calf suede loafers with cushioned arch footbed and Goodyear-welted leather soles. Effortless sophistication from boardroom presentations to relaxed weekend escapes.",
+    options: {
+      type: "Size (EU / UK)",
+      values: ["EU 39 / UK 6", "EU 40 / UK 7", "EU 41 / UK 8", "EU 42 / UK 9", "EU 43 / UK 10"]
+    },
+    specs: ["100% Full-grain calfskin suede", "Goodyear-welted leather sole", "Orthopedic memory foam footbed", "Breathable calfskin lining", "Includes brass shoe horn & flannel dust bags"]
+  },
+  {
+    id: 18,
+    name: "Artisanal Woven Leather Babouche Mules",
+    category: "footwear",
+    categoryLabel: "Luxury Footwear",
+    price: 3600,
+    originalPrice: 4200,
+    rating: 4.8,
+    reviewsCount: 82,
+    badge: "Artisanal",
+    featured: true,
+    isNew: false,
+    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
+    description: "Handwoven supple mocha lambskin slip-on mules featuring an almond toe silhouette and collapsible heel counter for effortless everyday lounging and chic resort styling.",
+    options: {
+      type: "Size (EU / UK)",
+      values: ["EU 36 / UK 3", "EU 37 / UK 4", "EU 38 / UK 5", "EU 39 / UK 6", "EU 40 / UK 7"]
+    },
+    specs: ["Intricately hand-braided lambskin", "Supple vegetable-tanned leather sole", "Padded insole for all-day cushioning", "Indoor & light outdoor wear"]
+  },
+  {
+    id: 19,
+    name: "Riviera Low-Top Linen & Leather Sneakers",
+    category: "footwear",
+    categoryLabel: "Luxury Footwear",
+    price: 4200,
+    originalPrice: 5100,
+    rating: 4.9,
+    reviewsCount: 116,
+    badge: "Trending",
+    featured: true,
+    isNew: true,
+    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+    description: "Contemporary low-profile court sneakers pairing raw Belgian flax linen panels with buttery soft nappa leather and natural vulcanized rubber soles. Refined minimalism at its peak.",
+    options: {
+      type: "Size (EU / UK)",
+      values: ["EU 38 / UK 5", "EU 39 / UK 6", "EU 40 / UK 7", "EU 41 / UK 8", "EU 42 / UK 9", "EU 43 / UK 10"]
+    },
+    specs: ["Belgian flax linen & Italian nappa leather", "100% Natural gum rubber outsole", "Waxed cotton laces", "Removable antimicrobial cork footbed"]
+  },
+  {
+    id: 20,
+    name: "Provence Silk-Lined Leather Ballet Flats",
+    category: "footwear",
+    categoryLabel: "Luxury Footwear",
+    price: 3450,
+    originalPrice: 4100,
+    rating: 4.9,
+    reviewsCount: 142,
+    badge: "Best Seller",
+    featured: false,
+    isNew: false,
+    image: "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=800&q=80",
+    description: "Ultra-plush glove-leather ballerina flats finished with delicate drawstring bows and luxurious mulberry silk linings in signature dusty lavender. Molds gracefully to your foot.",
+    options: {
+      type: "Size (EU / UK)",
+      values: ["EU 36 / UK 3", "EU 37 / UK 4", "EU 38 / UK 5", "EU 39 / UK 6", "EU 40 / UK 7"]
+    },
+    specs: ["Buttery soft lambskin upper", "Mulberry silk interior lining", "Flexible non-slip leather sole", "Zero-break-in elasticated binding"]
+  },
+  {
+    id: 21,
+    name: "Heritage Suede Chelsea Boots",
+    category: "footwear",
+    categoryLabel: "Luxury Footwear",
+    price: 6490,
+    originalPrice: 7800,
+    rating: 5.0,
+    reviewsCount: 67,
+    badge: "Autumn Edit",
+    featured: true,
+    isNew: true,
+    image: "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=800&q=80",
+    description: "Sculpted from water-repellent oiled calf suede in rich chocolate mocha, featuring tonal elasticated side gussets, stacked wooden heel, and pull tabs for easy slip-on wear.",
+    options: {
+      type: "Size (EU / UK)",
+      values: ["EU 39 / UK 6", "EU 40 / UK 7", "EU 41 / UK 8", "EU 42 / UK 9", "EU 43 / UK 10", "EU 44 / UK 11"]
+    },
+    specs: ["Weatherproof treated Italian calf suede", "Dainite-style rubber studded sole for grip", "Stacked natural leather heel (28mm)", "Calfskin lining with cushioned heel cup"]
+  },
+  {
+    id: 22,
+    name: "Athenian Strappy Artisan Leather Sandals",
+    category: "footwear",
+    categoryLabel: "Luxury Footwear",
+    price: 2890,
+    originalPrice: 3500,
+    rating: 4.7,
+    reviewsCount: 89,
+    badge: "Summer Pick",
+    featured: false,
+    isNew: false,
+    image: "https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=800&q=80",
+    description: "Hand-cut full-grain vachetta leather gladiator sandals with antique brass buckle fastenings. Naturally tans with sun exposure and deepens to a gorgeous golden patina.",
+    options: {
+      type: "Size (EU / UK)",
+      values: ["EU 36 / UK 3", "EU 37 / UK 4", "EU 38 / UK 5", "EU 39 / UK 6", "EU 40 / UK 7"]
+    },
+    specs: ["Chemical-free vegetable-tanned vachetta leather", "Solid brass adjustable buckle", "Hand-stitched leather edge", "Beveled durable heel"]
+  },
+  {
+    id: 23,
+    name: "Aura Provence Botanical Eau de Parfum",
+    category: "beauty",
+    categoryLabel: "Beauty & Self-Care",
+    price: 3250,
+    originalPrice: 3900,
+    rating: 5.0,
+    reviewsCount: 178,
+    badge: "Signature Scent",
+    featured: true,
+    isNew: true,
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+    description: "An artisanal botanical fragrance opening with wild French lavender and sparkling bergamot, leading to heart notes of Moroccan neroli, cashmere wood, and warm tonka bean.",
+    options: {
+      type: "Bottle Size",
+      values: ["50ml Glass Flacon", "100ml Deluxe Flacon"]
+    },
+    specs: ["Extrait de Parfum (22% concentration)", "Organic cane alcohol base", "Hand-bottled in amber flacon with magnetic cap", "Includes 2ml discovery atomizer"]
+  },
+  {
+    id: 24,
+    name: "Hand-Hammered Solid Brass Table Lamp",
+    category: "home",
+    categoryLabel: "Home Decor",
+    price: 5400,
+    originalPrice: 6800,
+    rating: 4.9,
+    reviewsCount: 53,
+    badge: "Artisanal",
+    featured: false,
+    isNew: true,
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+    description: "An architectural lamp handcrafted from spun solid brass with a brushed satin finish and raw linen empire lampshade. Emits a soothing, warm candle-like glow.",
+    options: {
+      type: "Shade Fabric",
+      values: ["Oatmeal Flax Linen", "Warm Ivory Silk"]
+    },
+    specs: ["Hand-spun solid brass base", "Braided chocolate twisted fabric cord (1.8m)", "Inline brass rotary dimmer switch", "Warm 2700K LED bulb included"]
+  },
+  {
+    id: 25,
+    name: "Italian Full-Grain Leather Weekender Bag",
+    category: "fashion",
+    categoryLabel: "Fashion & Accessories",
+    price: 7900,
+    originalPrice: 9500,
+    rating: 4.9,
+    reviewsCount: 124,
+    badge: "Luxury Travel",
+    featured: true,
+    isNew: false,
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    description: "Heirloom travel bag handcrafted from oiled espresso leather with antique brass hardware, reinforced rolled handles, padded shoulder strap, and waterproof cotton twill lining.",
+    options: {
+      type: "Leather Finish",
+      values: ["Rich Espresso", "Vintage Cognac Tan", "Midnight Noir"]
+    },
+    specs: ["Full-grain vegetable-tanned leather", "YKK antique brass two-way zippers", "Dedicated shoe/laundry compartment", "Dimensions: 52cm x 30cm x 26cm (Cabin Approved)"]
+  },
+  {
+    id: 26,
+    name: "Embossed Calfskin Desk Blotter & Pen Rest",
+    category: "stationery",
+    categoryLabel: "Stationery & Gifts",
+    price: 2750,
+    originalPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 46,
+    badge: "Atelier",
+    featured: false,
+    isNew: false,
+    image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&w=800&q=80",
+    description: "A sophisticated workstation centerpiece handcrafted in supple pebble-grain leather with suede backing, magnetic pen channel, and embossed gold foil sanctuary insignia.",
+    options: {
+      type: "Color",
+      values: ["Mocha Pebble Leather", "Lavender Ash", "Saddle Tan"]
+    },
+    specs: ["Vegetable-tanned calfskin leather", "Ultra-soft anti-slip microfiber suede backing", "Dimensions: 65cm x 40cm", "Water-resistant protective coating"]
   }
 ];
 

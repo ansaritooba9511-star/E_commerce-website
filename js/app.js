@@ -305,6 +305,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  window.filterByCategory = function(catId) {
+    state.category = catId;
+    updateActivePill();
+    renderProducts();
+    const section = document.getElementById('shop');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   // ==========================================
   // Shopping Cart Logic
   // ==========================================
@@ -944,7 +954,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!query.trim()) {
       resultsContainer.innerHTML = `
         <div style="font-size: 0.85rem; color: var(--color-text-muted); padding: 10px 0;">
-          Popular searches: <em>Silk Foulard</em>, <em>Lavender Candle</em>, <em>Sleep Oil</em>, <em>Ceramic Vase</em>
+          Popular searches: <em>Suede Loafers</em>, <em>Babouche Mules</em>, <em>Chelsea Boots</em>, <em>Silk Foulard</em>, <em>Lavender Candle</em>, <em>Eau de Parfum</em>
         </div>
       `;
       return;

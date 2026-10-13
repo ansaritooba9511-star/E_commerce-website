@@ -187,6 +187,7 @@
         <div class="filter-bar">
           <div class="category-pills" id="category-pills">
             <button class="pill-btn active" data-category="all">All Products</button>
+            <button class="pill-btn" data-category="footwear">Footwear & Shoes</button>
             <button class="pill-btn" data-category="fashion">Fashion & Accessories</button>
             <button class="pill-btn" data-category="home">Home Decor</button>
             <button class="pill-btn" data-category="beauty">Beauty & Self-Care</button>
@@ -224,7 +225,7 @@
 
         <!-- Results Counter -->
         <div class="results-status-bar">
-          <span id="product-count-display">Showing 16 refined pieces</span>
+          <span id="product-count-display">Showing 26 refined pieces</span>
           <span style="font-size: 0.8rem; color: var(--color-brown-mocha);">All prices inclusive of taxes</span>
         </div>
 
@@ -492,10 +493,11 @@
         <div class="footer-column">
           <h5>Collections</h5>
           <ul class="footer-links">
-            <li><a href="#shop" onclick="state.category='fashion'; renderProducts();">Fashion & Accessories</a></li>
-            <li><a href="#shop" onclick="state.category='home'; renderProducts();">Home Decor & Vessels</a></li>
-            <li><a href="#shop" onclick="state.category='beauty'; renderProducts();">Botanical Self-Care</a></li>
-            <li><a href="#shop" onclick="state.category='stationery'; renderProducts();">Stationery & Keepsakes</a></li>
+            <li><a href="#shop" onclick="window.filterByCategory('footwear')">Footwear & Shoes</a></li>
+            <li><a href="#shop" onclick="window.filterByCategory('fashion')">Fashion & Accessories</a></li>
+            <li><a href="#shop" onclick="window.filterByCategory('home')">Home Decor & Vessels</a></li>
+            <li><a href="#shop" onclick="window.filterByCategory('beauty')">Botanical Self-Care</a></li>
+            <li><a href="#shop" onclick="window.filterByCategory('stationery')">Stationery & Keepsakes</a></li>
             <li><a href="#shop">New Arrivals 2026</a></li>
           </ul>
         </div>
